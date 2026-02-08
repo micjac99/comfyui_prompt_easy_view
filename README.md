@@ -3,6 +3,9 @@
 A lightweight, local web-based image browser for [ComfyUI](https://github.com/comfyanonymous/ComfyUI). 
 Easily browse your generated images, view their prompts, workflow metadata, and inspect them in full detail.
 
+<img width="1536" height="1227" alt="image" src="https://github.com/user-attachments/assets/ea08e66f-8e47-4d23-b7ac-43b70b2b9c82" />
+
+
 ## Features
 
 - **Gallery View**: Browse all your ComfyUI generated images in a responsive grid.
