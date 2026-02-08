@@ -16,11 +16,17 @@ Easily browse your generated images, view their prompts, workflow metadata, and 
 
 ## Installation
 
-1. Clone or download this repository into your `ComfyUI` custom_nodes folder or anywhere you like (e.g. `ComfyUI/tools/image-browser`).
+1. Clone or download this repository into your `ComfyUI` folder or anywhere you like (e.g. `ComfyUI_windows_portable/`).
 2. Ensure you have Python installed (or use the ComfyUI embedded python).
 3. Install dependencies:
+   option 1 (pyhon environment installed in your OS)
    ```bash
-   pip install flask pillow
+   python pip install flask pillow
+   ```
+   
+   option 2 for ComfyUI embedded python
+   ```bash
+   YOUR_COMFYUI_DIR/python_embeded/python -m pip install flask pillow
    ```
 
 ## Usage
@@ -34,6 +40,7 @@ Run the python script directly:
 ```bash
 python app.py
 ```
+
 
 ## Configuration
 
