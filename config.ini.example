@@ -1,0 +1,9 @@
+[Settings]
+# Path to your ComfyUI output directory.
+# Can be relative to this folder or absolute.
+# Default: ../ComfyUI/output
+Path = ../ComfyUI/output
+
+# Web server port
+# Default: 18001
+Port = 18001

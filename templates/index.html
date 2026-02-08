@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComfyUI Image Browser</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="gallery-container">
+            <header>
+                <h1>ComfyUI Gallery</h1>
+                <div class="controls">
+                    <input type="text" id="search" placeholder="Search prompts..." />
+                    <span id="image-count">Loading...</span>
+                </div>
+            </header>
+            <div id="gallery" class="gallery">
+                <!-- Thumbnails will be injected here -->
+            </div>
+        </div>
+
+        <div class="details-panel" id="details-panel">
+            <div class="resize-handle"></div>
+            <div class="details-content">
+                <button id="close-details" class="close-btn">&times;</button>
+                <div class="image-preview">
+                    <img id="preview-image" src="" alt="Preview">
+                </div>
+                <div class="metadata-section">
+                    <h3>Metadata</h3>
+                    <div id="metadata-content">
+                        <p class="placeholder">Select an image to view details</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Modal -->
+    <div id="image-modal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="full-image">
+        <div id="caption"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+
+</html>
